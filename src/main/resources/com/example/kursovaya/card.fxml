@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="210.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaya.CardController">
+   <children>
+      <Rectangle fill="#1f93ff00" height="210.0" layoutX="120.0" stroke="#b8b8b8" strokeType="INSIDE" strokeWidth="2.0" width="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle fx:id="creditIconBackground" arcHeight="100.0" arcWidth="100.0" height="150.0" layoutX="21.0" layoutY="30.0" stroke="TRANSPARENT" strokeType="INSIDE" width="150.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.009999999776482582" green="0.5191428661346436" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.9595237970352173" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="54.0" layoutY="35.0" text="\%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="527.0" layoutY="126.0" text="Процентная ставка:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="creditPercent" layoutX="694.0" layoutY="126.0" text="0%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="126.0" text="Минимальная сумма:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="creditMinSum" layoutX="377.0" layoutY="126.0" text="0 руб.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="155.0" text="Максимальная сумма:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="creditMaxSum" layoutX="383.0" layoutY="155.0" text="0 руб.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="creditName" layoutX="194.0" layoutY="12.0" text="Выгодный | Потребительский">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="creditDescription" layoutX="194.0" layoutY="51.0" prefHeight="70.0" prefWidth="524.0" text="Просто описание">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

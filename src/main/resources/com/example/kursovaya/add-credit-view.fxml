@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaya.AddCreditViewController">
+   <children>
+      <Label layoutX="249.0" layoutY="14.0" text="Добавить кредит">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="92.0" text="Наименование:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditName" layoutX="318.0" layoutY="85.0" prefHeight="55.0" prefWidth="312.0" promptText="Стандарный...">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="161.0" text="Процентная ставка:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditPercent" layoutX="318.0" layoutY="154.0" prefHeight="55.0" prefWidth="312.0" promptText="7.9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="233.0" text="Максимальная сумма:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditMaxSum" layoutX="318.0" layoutY="226.0" prefHeight="55.0" prefWidth="312.0" promptText="200000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="33.0" layoutY="309.0" text="Минимальная сумма:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditMinSum" layoutX="318.0" layoutY="301.0" prefHeight="55.0" prefWidth="312.0" promptText="1000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="174.0" layoutY="377.0" text="Описание:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="creditDescription" layoutX="319.0" layoutY="374.0" prefHeight="141.0" prefWidth="312.0" promptText="Описание....">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="89.0" layoutY="536.0" text="Срок погашения:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditMaturity" layoutX="319.0" layoutY="529.0" prefHeight="55.0" prefWidth="312.0" promptText="3 месяца - 3 года">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="144.0" layoutY="610.0" text="Тип кредита:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="creditType" layoutX="318.0" layoutY="603.0" prefHeight="55.0" prefWidth="312.0" promptText="Выберите тип кредита..." />
+      <Button fx:id="addCreditButton" layoutX="243.0" layoutY="675.0" mnemonicParsing="false" onMouseClicked="#addCreditButtonClick" prefHeight="55.0" prefWidth="231.0" text="Добавить">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
